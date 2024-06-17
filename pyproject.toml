@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61.0.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "caesium_image_compressor"
+version = "0.19.3"
+description = "Caesium Image Compressor Wrapper For Python"
+readme = "README.md"
+authors = [{ name = "Brian Jemilo II", email = "jemiloii@gmail.com" }]
+license = { file = "LICENSE" }
+classifiers = [
+    "License :: OSI Approved :: Apache 2.0 License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+]
+keywords = ["caesium", "image", "compressor", "reducer", "wrapper"]
+dependencies = []
+requires-python = ">=3.10"
+
+[project.urls]
+Homepage = "https://github.com/jemiloii/caesium_image_compressor"
+
+[project.scripts]
+download_caesium = "caesium.downloader:download_and_extract_caesium"
